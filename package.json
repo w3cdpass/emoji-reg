@@ -1,0 +1,30 @@
+{
+  "name": "emoji-reg",
+  "version": "1.0.2",
+  "description": "A simple emoji-based logger for CLI and applications.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "emoji-reg": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node dist/cli.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "emoji",
+    "log",
+    "logger",
+    "cli",
+    "typescript",
+    "terminal"
+  ],
+  "author": "w3cdpass",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.15.29",
+    "typescript": "^5.8.3"
+  }
+}
